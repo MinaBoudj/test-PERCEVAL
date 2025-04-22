@@ -1,0 +1,22 @@
+{
+    "name": "sbom-perceval",
+    "version": "1.0.0",
+    "description": "Projet de démonstration : génération de SBOM + collecte Perceval",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/your-org/sbom-test.git"
+    },
+    "scripts": {
+      "start": "node index.js",
+      "sbom": "syft . -o cyclonedx-json > bom.json"
+    },
+    "dependencies": {
+      "express": "^4.19.2",
+      "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+      "eslint": "^8.57.0"
+    }
+  }
+  
